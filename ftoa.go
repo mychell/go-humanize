@@ -39,9 +39,9 @@ func Ftoa(num float64) string {
 	return stripTrailingZeros(strconv.FormatFloat(num, 'f', 6, 64))
 }
 
-// Ftoa converts a float to a string with no trailing zeros.
+// Ftoa converts a float to a string with no trailing zeros, changed the float to use 8 decimal places.
 func Ftoa8(num float64) string {
-	return stripTrailingZeros(strconv.FormatFloat(num, 'f', 6, 64))
+	return stripTrailingZeros(strconv.FormatFloat(num, 'f', 8, 64))
 }
 
 // FtoaWithDigits converts a float to a string but limits the resulting string
